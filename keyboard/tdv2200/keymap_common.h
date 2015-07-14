@@ -99,23 +99,23 @@ extern const uint16_t fn_actions[] = {};
                                       KG10,                                                         KG20, KG21, KG22, KG23, KG24, KG25, KG26, KG27  \
     ) \
 { /*              0   ,      1          2          3          4          5          6          7   /*
-  /* 0 */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* 1 */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* 2 */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* 3 */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* 4 */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* 5 */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* 6 */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* 7 */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* 8 */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* 9 */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* A */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* B */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* C */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* D */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* E */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* F */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }, \
-  /* # */  { KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1, KC_1    }  \
+  /* 0 */  { KC_##KA10, KC_##KC11, KC_##KD12, KC_##KE12, KC_##KF11, KC_##KB23, KC_##KE27, KC_NO    }, \
+  /* 1 */  { KC_##KA11, KC_##KC12, KC_##KD13, KC_##KE13, KC_##KF12, KC_##KB22, KC_##KF26, KC_NO    }, \
+  /* 2 */  { KC_##KA12, KC_##KC13, KC_##KD14, KC_##KE14, KC_##KF13, KC_##KB26, KC_##KE26, KC_NO    }, \
+  /* 3 */  { KC_##KA13, KC_##KC14, KC_##KD15, KC_##KE15, KC_##KF14, KC_##KB25, KC_##KF25, KC_##KG23}, \
+  /* 4 */  { KC_##KA14, KC_##KC15, KC_##KD16, KC_##KE16, KC_##KF15, KC_##KB24, KC_##KF24, KC_##KG22}, \
+  /* 5 */  { KC_##KA15, KC_##KC16, KC_##KD17, KC_##KE17, KC_##KF16, KC_##KB27, KC_##KF23, KC_##KG21}, \
+  /* 6 */  { KC_##KA16, KC_##KC17, KC_##KD18, KC_##KE18, KC_##KF17, KC_##KA27, KC_##KE24, KC_##KG20}, \
+  /* 7 */  { KC_##KA17, KC_##KC18, KC_##KD19, KC_##KE19, KC_##KF18, KC_##KA26, KC_##KD27, KC_##KE22}, \
+  /* 8 */  { KC_##KA18, KC_##KC19, KC_##KD1A, KC_##KE1A, KC_##KF19, KC_##KD22, KC_##KD24, KC_##KD21}, \
+  /* 9 */  { KC_##KA19, KC_##KC1A, KC_##KD1B, KC_##KE1B, KC_##KF1A, KC_##KB21, KC_##KC25, KC_##KC21}, \
+  /* A */  { KC_##KA1A, KC_##KC18, KC_##KD1C, KC_##KE1C, KC_##KF1B, KC_##KA25, KC_##KE25, KC_##KF22}, \
+  /* B */  { KC_##KA20, KC_##KG26, KC_##KD23, KC_##KG27, KC_##KG24, KC_##KA21, KC_##KC26, KC_##KA23}, \
+  /* C */  { KC_##KA1E, KC_##KC20, KC_##KD20, KC_##KE21, KC_##KG10, KC_##KB20, KC_##KC27, KC_NO    }, \
+  /* D */  { KC_##KA1D, KC_##KC1E, KC_##KD10, KC_##KE20, KC_##KF21, KC_##KC22, KC_##KD25, KC_NO    }, \
+  /* E */  { KC_##KA1C, KC_##KC1D, KC_##KD1E, KC_##KE10, KC_##KF20, KC_##KA22, KC_##KC24, KC_##KC23}, \
+  /* F */  { KC_##KA1B, KC_##KC1C, KC_##KD1D, KC_##KE1D, KC_##KF1D, KC_##KA24, KC_##KD26, KC_##KE23}, \
+  /* # */  { KC_NO    , KC_##KC10, KC_##KD11, KC_##KE11, KC_##KF10, KC_NO    , KC_NO    , KC_NO    }  \
 }
 
 
