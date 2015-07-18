@@ -19,37 +19,43 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /*
  * ,---------------------------------------------------------------------------------------------------------------------------------------------.
- * |  ESC|  F1 |  F2 |  F3 |  F4 |  F5 |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 | F13 |  F14 |  |STRYK| KOPI|FLYTT|     | FUNC|SKRIV|HJELP|SLUTT|
+ * |  ESC|  F1 |  F2 |  F3 |  F4 |  F5 |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 | F13 |  F14 |  |STRYK| KOPI|FLYTT|     | P1  | P2  | P3  | P4  |
  * |------------------------------------------------------------------------------------------|  |-----|-----|-----|     |-----|-----|-----|-----|
- *                                                                                               | TAB | (...| aaa |     | P1  | P2  | P3  | P4  |
+ *                                                                                               | TAB | (...| aaa |     | P5  | P6  | P7  | P8  |
  * |------------------------------------------------------------------------------------------|  |-----|-----|-----|     |-----|-----|-----|-----|
- * | * Caps |   1 |   2 |   3 |   4 |   5 |   6 |   7 |   8 |   9 |   0 |   + |   @ |???| BCSP|  | < < | JUST| > > |     | P5  | P6  | P7  | P8  |
+ * | * Caps |   1 |   2 |   3 |   4 |   5 |   6 |   7 |   8 |   9 |   0 |   + |   @ |???| BCSP|  | < < | JUST| > > |     | 000 | 00  |  =  |SPACE|
  * |------------------------------------------------------------------------------------------|  |-----|-----|-----|     |-----|-----|-----|-----|
- * | Eksp| CTRL|   Q |   W |   E |   R |   T |   Y |   U |   I |   O |   P |   Å |  ^ |  LF   |  | <== |ANGRE| ==> |     |  7  |  8  |  9  |SPACE|
+ * | Eksp| CTRL|   Q |   W |   E |   R |   T |   Y |   U |   I |   O |   P |   Å |  ^ |  LF   |  | <== |ANGRE| ==> |     |  7  |  8  |  9  |  +  |
  * |------------------------------------------------------------------------------------------|  |-----|-----|-----|     |-----|-----|-----|-----|
  * |  ^^ |* LOCK|   A |   S |   D |   F |   G |   H |   J |   K |   L |   Ø |   Æ |   * |  E  |  | <=  | UP  |  => |     |  4  |  5  |  6  |  -  |
  * |------------------------------------------------------------------------------------|  N  |  |-----|-----|-----|     |-----|-----|-----|-----|
- * |    Lshift| <  |   Z |   X |   C |   V |   B |   N |   M |   , |   . |   - | Rshift |  T  |  |LEFT |^HOME|RIGHT|     |  1  |  2  |  3  |  E  |
+ * |    Lshift| <  |   Z |   X |   C |   V |   B |   N |   M |   , |   . |   - | Rshift |  T  |  |HOME | UP  | END |     |  1  |  2  |  3  |  E  |
  * |------------------------------------------------------------------------------------------|  |-----|-----|-----|     |-----|-----|-----|  N  |
- *                             |          SPACE                          |                       |HOME | DOWN| END |     |     0     |  ,  |  T  |
+ *                             |          SPACE                          |                       |LEFT |DOWN |RIGHT|     |     0     |  ,  |  T  |
  *                             `-----------------------------------------'                       `-----------------'     `-----------------------'
  */
 const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Layer 0: Default Layer */
     [0] = KEYMAP( \
-        ESC , F1  , F2  , F3  , F4  , F5  , F6  , F7  , F8  , F9  , F10 , F11 , F12 , NO  , NO  ,       NO  , NO  , NO  , NO  , NO  , NO  , NO  , FN1 , \
+        ESC , F1  , F2  , F3  , F4  , F5  , F6  , F7  , F8  , F9  , F10 , F11 , F12 , F13 , F14 ,       NO  , NO  , NO  , NO  , NO  , NO  , NO  , FN1 , \
                                                                                                         NO  , NO  , NO  , NO  , NO  , NO  , NO  , NO  , \
-        CAPS,    1,    2,    3,    4,    5,    6,    7,    8,    9,    0, NO  , NO  , BSPC, BSPC,       NO  , NO  , NO  , NO  , FN1 , PEQL, PSLS, PAST, \
-        LGUI ,LCTRL,    Q,    W,    E,    R,    T,    Y,    I,    O,    P, NO  , NO  , NO  , ENT ,      NO  , NO  , NO  , NO  , P7  , P8  , P9  , PPLS, \
-        LALT, SLCK,    A,    S,    D,    F,    G,    H,    J,    K,    L, NO  , NO  , PAST,             NO  , UP  , NO  , NO  , P4  , P5  , P6  , PMNS, \
-      LSHIFT, NO  ,    Z,    X,    C,    V,    B,    N,    M, COMM,  DOT, MINS,             ENT ,       NO  , HOME, NO  , NO  , P1  , P2  , P3  ,       \
+        CAPS,    1,    2,    3,    4,    5,    6,    7,    8,    9,    0, MINS,EQL  , BSPC, BSPC,       NO  , NO  , NO  , NO  ,FN18 ,FN17 , PEQL, SPC , \
+        LGUI,LCTRL,    Q,    W,    E,    R,    T,    Y,    U,    I,    O, P   , LBRC, RBRC, ENT ,       NO  , NO  , PGUP, NO  , P7  , P8  , P9  , PPLS, \
+        LALT, LSCR,    A,    S,    D,    F,    G,    H,    J,    K,    L,SCOLON, NO  , PAST,            NO  , NO  , PGDN, NO  , P4  , P5  , P6  , PMNS, \
+      LSHIFT, SCLN,    Z,    X,    C,    V,    B,    N,    M, COMM,  DOT, SLSH,             ENT ,       HOME, UP  , END , NO  , P1  , P2  , P3  ,       \
                                           SPC ,                                                         LEFT, DOWN, RGHT, NO  , P0  , NO  , NO  , PENT  \
     )                              
-};
+}; 
 
 /* translates key to keycode */
 uint8_t keymap_key_to_keycode(uint8_t layer, keypos_t key)
 {
+	phex(layer); 
+	print(" "); 
+	phex(key.row); 
+	print(" "); 
+	phex(key.col); 
+	print("\n"); //Prints the layer to debug console.. only used for debugging layers
 	return pgm_read_byte(&keymaps[(layer)][(key.row)][(key.col)]);
 }
 
