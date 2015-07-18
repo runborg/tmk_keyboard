@@ -206,7 +206,7 @@ uint8_t matrix_scan(void)
     matrix[0x10] &= ~(1<<6 | 1<<5);
 
     //if (debug_row == 0)  { 
-        //matrix_print();
+    //    matrix_print();
 
     //}
 
@@ -273,7 +273,7 @@ static matrix_row_t read_cols(void)
     PORTB |= ROW_DISABLE;      // Disables the disable pin.. :) = Enable buffer
     _delay_us(2); 
     uint8_t p = PIND;
-    PORTB &= ~ROW_DISABLE;     // Enable tje disable pin.. = Disable buffer
+    PORTB &= ~ROW_DISABLE;     // Enable the disable pin.. = Disable buffer
 
     return p;
     
