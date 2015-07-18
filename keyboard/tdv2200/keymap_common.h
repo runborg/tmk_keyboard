@@ -109,7 +109,7 @@ extern const uint16_t fn_actions[] = {};
   /* 7 */  { KC_##KA17, KC_##KC18, KC_##KD19, KC_##KE19, KC_##KF18, KC_##KA26, KC_##KD27, KC_##KE22}, \
   /* 8 */  { KC_##KA18, KC_##KC19, KC_##KD1A, KC_##KE1A, KC_##KF19, KC_##KD22, KC_##KD24, KC_##KD21}, \
   /* 9 */  { KC_##KA19, KC_##KC1A, KC_##KD1B, KC_##KE1B, KC_##KF1A, KC_##KB21, KC_##KC25, KC_##KC21}, \
-  /* A */  { KC_##KA1A, KC_##KC18, KC_##KD1C, KC_##KE1C, KC_##KF1B, KC_##KA25, KC_##KE25, KC_##KF22}, \
+  /* A */  { KC_##KA1A, KC_##KC1B, KC_##KD1C, KC_##KE1C, KC_##KF1B, KC_##KA25, KC_##KE25, KC_##KF22}, \
   /* B */  { KC_##KA20, KC_##KG26, KC_##KD23, KC_##KG27, KC_##KG24, KC_##KA21, KC_##KC26, KC_##KA23}, \
   /* C */  { KC_##KA1E, KC_##KC20, KC_##KD20, KC_##KE21, KC_##KG10, KC_##KB20, KC_##KC27, KC_NO    }, \
   /* D */  { KC_##KA1D, KC_##KC1E, KC_##KD10, KC_##KE20, KC_##KF21, KC_##KC22, KC_##KD25, KC_NO    }, \
